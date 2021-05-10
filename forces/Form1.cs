@@ -45,6 +45,28 @@ namespace forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
+           
+
+
+        }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
             try
             {
                 //read force and angle from textboxes
@@ -57,7 +79,7 @@ namespace forces
                 label1.Text = "Fx= " + Fx;
                 label2.Text = "Fy= " + Fy;
 
-               
+
 
             }
             catch
@@ -65,8 +87,6 @@ namespace forces
                 //show error message
                 MessageBox.Show("your a fool");
             }
-
-
         }
     }
     
