@@ -47,22 +47,23 @@ namespace forces
         {
             try
             {
+                //read force and angle from textboxes
                 double Force = double.Parse(textBox1.Text);
                 double angle = double.Parse(textBox2.Text);
-
+                //read Fx and Fy from labels 
                 double Fx = Force * cos(angle);
                 double Fy = Force * sin(angle);
-
+                //run the code between these brackets 
                 label1.Text = "Fx= " + Fx;
                 label2.Text = "Fy= " + Fy;
 
-                //run the code between these brackets
-                //jump to catch if an error occurs
+               
 
             }
             catch
             {
-                MessageBox.Show("your a fool you kidda");
+                //show error message
+                MessageBox.Show("your a fool");
             }
 
 
