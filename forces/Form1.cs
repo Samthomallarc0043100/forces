@@ -19,14 +19,14 @@ namespace forces
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+
         }
 
         double sin(double x)
         {
             return (Math.Sin(x * Math.PI / 180.00));
         }
-        double asin(double x )
+        double asin(double x)
         {
             return (Math.Asin(x) * 180.00 / Math.PI);
         }
@@ -45,14 +45,48 @@ namespace forces
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            double Force = double.Parse(textBox1.Text);
-            double angle = double.Parse(textBox2.Text);
+            try
+            {
+                double Force = double.Parse(textBox1.Text);
+                double angle = double.Parse(textBox2.Text);
 
-            double Fx = Force * cos(angle);
-            double Fy = Force * sin(angle);
+                double Fx = Force * cos(angle);
+                double Fy = Force * sin(angle);
 
-            label1.Text = "Fx= " + Fx;
-            label2.Text = "Fy= " + Fy;
+                label1.Text = "Fx= " + Fx;
+                label2.Text = "Fy= " + Fy;
+
+                //run the code between these brackets
+                //jump to catch if an error occurs
+
+            }
+            catch
+            {
+                MessageBox.Show("your a fool you kidda");
+            }
+
+
         }
     }
-}
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
