@@ -79,7 +79,7 @@ namespace forces
                 label1.Text = "Fx= " + Fx;
                 label2.Text = "Fy= " + Fy;
 
-
+                double Force = Math.Sqrt(Fx * Fy + Fy * Fy);
 
             }
             catch
@@ -87,6 +87,12 @@ namespace forces
                 //show error message
                 MessageBox.Show("your a fool");
             }
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+            
+             
         }
     }
     
